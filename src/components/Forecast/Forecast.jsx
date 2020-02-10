@@ -21,13 +21,6 @@ const Forecast = () => {
         }
       }
     )
-      // .then(response => {
-      // 	console.log(response);
-      // })
-      // .catch(err => {
-      // 	console.log(err);
-      // });
-
       .then(response => response.json())
       .then(response => {
         setResponseObj(response);
@@ -36,13 +29,13 @@ const Forecast = () => {
 
   return (
     <div>
-      <h2> Find Current Weather Conditions</h2>
+      <h2> What's the weather like?</h2>
       <form
         id="form"
-        className="form-group d-flex flex-column align-items-center"
+        className="form-group d-flex flex-column align-items-center col-12"
         onSubmit={getForecast}
       >
-        <div className="form-group col-5">
+        <div className="form-group col-8">
           <input
             type="text"
             placeholder="Enter City"
@@ -77,10 +70,11 @@ const Forecast = () => {
             <label className="form-check-label">Celcius</label>
           </div>
         </div>
-
-        <button className="btn btn-success" type="submit">
-          Get Forecast
-        </button>
+        <div className="button-container">
+          <button className="btn btn-info btn-lg" type="submit">
+            Get Forecast
+          </button>
+        </div>
       </form>
 
       <Conditions responseObj={responseObj} />

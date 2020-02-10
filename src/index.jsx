@@ -7,7 +7,7 @@ function App() {
   return (
     <div
       id="main-container"
-      className="App container d-flex flex-column align-items-center justify-content-center"
+      className="App container d-flex flex-column align-items-center justify-content-start"
     >
       <header className="App-header">
         <h1> Weather App</h1>

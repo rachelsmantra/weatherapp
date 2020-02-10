@@ -11,6 +11,7 @@ body {
 
 #main-container {
   height: 100vw;
+  margin-top: 50px;
 }
 
 h1 {
@@ -24,6 +25,28 @@ h2 {
 }
 
 .conditions {
-  color: white;
   font-family: "Open Sans", sans-serif;
+}
+
+label {
+  color: white;
+}
+
+form {
+  padding: 10px;
+}
+
+.form-check {
+  padding: 5px;
+}
+
+.button-container {
+  padding: 10px;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card-header {
 }
